@@ -1,0 +1,46 @@
+<html lang="en">
+
+
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Image Classification App</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <!--Add an import of KNN Classifier-->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link href='style.css' rel='stylesheet'/>
+  </head>
+  <body>
+      <div class='logo'><img src='Images/TensorFlow_JS.png' width="250" /></div>
+      <div class='title'><h1> My First Image Classification App using Tensorflow.js</h1></div>
+    </div>
+   </nav>
+
+    <div class='container'>
+      <div class='example fixed'>
+        <div class='item'>
+          <h1> Image input</h1>
+          <video autoplay playsinline muted id="webcam" width="250" height="250"></video>
+          <script src="index.js"></script>
+        </div>
+        <div class='item'>
+          <h1> Classification</h1>
+          <a class='button' id="class-a">Add Class A</a>
+          <a class='button' id="class-b">Add Class B</a>
+          <a class='button' id="class-c">Add Class C</a>
+          <a class='button' id="class-d">Add Class 'No Action'</a>
+        </div>
+        <div class='item'>
+          <h1> Prediction Result</h1>
+          <div class='print' id="console">
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
